@@ -81,6 +81,11 @@ public class Loans {
                 });
     }
 
+    /**
+     * Gets a loan given a loandId
+     * @param loanId String
+     * @return Loan
+     */
     public Loan getLoanByLoanId(String loanId) throws Exception {
         return loans.stream()
                 .filter(loan -> loan.getId().equals(loanId))
