@@ -69,6 +69,10 @@ public class Loans {
         this.loans = loans;
     }
 
+    /**
+     * List all loans of a given branch
+     * @param branchCode
+     */
     public void listBranchLoans(int branchCode){
         //filter all loans by branchcode
         System.out.format("These are the loans of branch %d: %n", branchCode);
